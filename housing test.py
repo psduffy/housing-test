@@ -1,0 +1,20 @@
+#enter apartment name
+n = str(input("Enter apartment name: "))
+#enter values for each variable
+z = float(input("Enter Base Rent: "))
+a = float(input("Enter Square Feet: "))
+b = int(input("Rate: Sunlight 1-10: "))
+c = int(input("Rate: View 1-10: "))
+d = int(input("Rate: Appliances 1-10: "))
+e = int(input("Rate: Look (Paint, floor, cabinets, etc.) 1-10: "))
+f = int(input("Rate: Parking 1-10: "))
+g = int(input("Rate: Storage 1-5: "))
+h = int(input("In-unit laundry: enter 5 if Y, 0 if N "))
+i = int(input("Bedrooms: enter 5 if 2br, 0 if 1br "))
+w = float(input("Rate: Walkability 1-100 "))
+#add(?) all variables
+x = float(1/(z/1000)) * ((a/100) + b + c + d + e + f + g + h + (w/10))
+print("\n")
+print(n, ": ", b, "|", c, "|", d, "|", e, "|", f, "|", g, "|", h, "|", i)
+print("\n")
+print("Score:", x)
